@@ -12,8 +12,8 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 /**
- *
- * @author 6324569
+ * GitHub Link: https://github.com/QuentinProulx/lab03
+ * @author 6324569 - Quentin Proulx
  */
 public class Lab03QuentinProulx extends Application {
         Label firstName = new Label("First Name:");
@@ -109,6 +109,7 @@ public class Lab03QuentinProulx extends Application {
             }
             boolean email = hasAt && validDom;
             
+            // Setting message
             if (password && email) {
                 message.setText("WELCOME!");
             } else {
