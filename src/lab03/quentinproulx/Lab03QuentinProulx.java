@@ -52,25 +52,21 @@ public class Lab03QuentinProulx extends Application {
         
         firstNameInput.setOnKeyTyped(e -> {
             firstNameFilled = (firstNameInput.getText().length() > 0) ? true : false;
-            
             setRegister();
         });
         
         lastNameInput.setOnKeyTyped(e -> {
             lastNameFilled = (lastNameInput.getText().length() > 0) ? true : false;
-            
             setRegister();
         });
         
         emailInput.setOnKeyTyped(e -> {
             emailFilled = (emailInput.getText().length() > 0) ? true : false;
-            
             setRegister();
         });
         
         passwordInput.setOnKeyTyped(e -> {
             passwordFilled = (passwordInput.getText().length() > 0) ? true : false;
-            
             setRegister();
         });
         
