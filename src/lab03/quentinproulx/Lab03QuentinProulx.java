@@ -51,22 +51,22 @@ public class Lab03QuentinProulx extends Application {
         register.setDisable(true);
         
         firstNameInput.setOnKeyTyped(e -> {
-            firstNameFilled = (firstNameInput.getText().length() > 0) ? true : false;
+            firstNameFilled = firstNameInput.getText().length() > 0;
             setRegister();
         });
         
         lastNameInput.setOnKeyTyped(e -> {
-            lastNameFilled = (lastNameInput.getText().length() > 0) ? true : false;
+            lastNameFilled = lastNameInput.getText().length() > 0;
             setRegister();
         });
         
         emailInput.setOnKeyTyped(e -> {
-            emailFilled = (emailInput.getText().length() > 0) ? true : false;
+            emailFilled = emailInput.getText().length() > 0;
             setRegister();
         });
         
         passwordInput.setOnKeyTyped(e -> {
-            passwordFilled = (passwordInput.getText().length() > 0) ? true : false;
+            passwordFilled = passwordInput.getText().length() > 0;
             setRegister();
         });
         
@@ -77,6 +77,10 @@ public class Lab03QuentinProulx extends Application {
             passwordInput.setText("");
             
             register.setDisable(true);
+        });
+        
+        register.setOnMouseClicked(e -> {
+            
         });
         
         gridPane.setAlignment(Pos.CENTER);
